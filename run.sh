@@ -24,7 +24,7 @@ if [ "$#" -ne 1 ]; then
     echo "    NAME_STYLE: name of the .style to use"
     echo "    NAME_MML: name of the .mml file to render to mapnik.xml"
     echo "    NAME_SQL: name of the .sql file to use"
-    exit 1
+    exit 0
 fi
 
 set -x
