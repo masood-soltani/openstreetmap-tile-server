@@ -139,7 +139,7 @@ RUN apt-get update \
 && apt-get autoremove --yes \
 && rm -rf /var/lib/{apt,dpkg,cache,log}/
 
-RUN adduser --disabled-password --gecos "" renderer
+RUN adduser --disabled-password --gecos "" renderer -u 1001040000
 
 # Install python libraries
 RUN pip3 install \
